@@ -1,0 +1,40 @@
+nav {
+  padding: 2%;
+}
+
+nav #navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+nav ul {
+  list-style-type: none;
+}
+
+nav form {
+  width: 60%;
+}
+
+nav .search {
+  padding: 0.25em 1em;
+  width: 80%;
+  border: 2px solid #39c0ed;
+  caret-color: dodgerblue;
+}
+
+nav .search:focus {
+  outline-color: #39c0ed;
+}
+
+nav #navbar ul li a {
+  font-weight: bold;
+  font-size: 2em;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-brand-name {
+  font-family: Pacifico, cursive;
+  color: #39c0ed !important;
+}

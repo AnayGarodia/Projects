@@ -1,0 +1,260 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+main {
+  font-family: "Josefin Slab", serif;
+}
+
+h1,
+h2 {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  background-color: white;
+  padding-bottom: 10%;
+}
+
+header section {
+  display: flex;
+  justify-content: center;
+}
+
+.header-img {
+  height: 10%;
+  width: 10%;
+  animation: 1.5s rotate;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+.head-main-head {
+  display: block;
+  text-align: center;
+  font-size: 45px;
+  animation: 1.5s fade-in;
+}
+
+.head-main-p {
+  display: block;
+  font-weight: 600;
+  font-size: 30px;
+  text-align: center;
+  animation: 3s fade-in;
+}
+
+.call-to-action-btns .log-in {
+  margin-right: 2%;
+}
+
+.log-in {
+  animation: 3.5s fade-in;
+  transition: 1s;
+}
+
+.sign-up {
+  animation: 3.5s fade-in;
+  transition: 1s;
+}
+
+.log-in:hover {
+  box-shadow: 0.5em 0.5em rgb(0, 0, 0, 0.15);
+}
+
+.sign-up:hover {
+  box-shadow: 0.5em 0.5em rgb(0, 0, 0, 0.15);
+}
+
+.rocket-animation-img {
+  position: absolute;
+  height: 25%;
+  width: 10%;
+  right: 110%;
+  top: 60%;
+  transform: rotate(90deg);
+  animation: 5s rocket 1s;
+  animation-timing-function: ease-out;
+  z-index: 100;
+}
+
+@keyframes rocket {
+  0% {
+    right: 110%;
+    top: 60%;
+  }
+
+  10% {
+    transform: rotate(30deg);
+  }
+
+  20% {
+    right: 70%;
+    top: 20%;
+  }
+
+  30% {
+    transform: rotate(120deg);
+  }
+
+  40% {
+    top: 40%;
+    right: 40%;
+  }
+
+  47% {
+    transform: rotate(10deg);
+  }
+
+  50% {
+    top: 20%;
+    right: 20%;
+  }
+
+  60% {
+    transform: rotate(-200deg);
+  }
+
+  70% {
+    top: 40%;
+    right: 10%;
+  }
+
+  80% {
+    transform: rotate(-300deg);
+  }
+
+  100% {
+    right: -100%;
+    display: none;
+  }
+}
+
+.black-portion {
+  background-color: black;
+  margin-top: 10%;
+  padding: 10% 0;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.container section {
+  text-align: center;
+  background-color: white;
+  max-width: 300px;
+  padding-right: 35px;
+  padding-top: 30px;
+  padding-left: 35px;
+  padding-bottom: 50px;
+  margin-bottom: 5%;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.container section img {
+  width: 40%;
+  height: 37%;
+}
+
+.container section img:nth-of-type(3) {
+  height: 25%;
+  width: 45%;
+  margin-bottom: 7%;
+}
+
+.container section:hover {
+  box-shadow: 0.5em 0.5em rgb(255, 255, 255, 0.25);
+  transform: translateY(-5px) rotate(1.25deg);
+}
+
+.container section p {
+  font-weight: 500;
+}
+
+.container section h1 {
+  font-weight: 800;
+}
+
+.blue-portion {
+  background-color: dodgerblue;
+  padding: 10% 3%;
+}
+
+.blue-portion p {
+  margin-right: 60%;
+  margin-top: 3%;
+  font-size: 20px;
+}
+
+.blue-portion img {
+  margin-top: -30%;
+  margin-left: 50%;
+  height: 60%;
+  width: 45%;
+}
+
+.red-portion {
+  background-color: red;
+  color: white;
+  padding: 10% 3%;
+}
+
+.red-portion p {
+  margin-right: 60%;
+  margin-top: 5%;
+  font-size: 20px;
+}
+
+.red-portion img {
+  margin-top: -30%;
+  margin-left: 35%;
+  height: 45%;
+  width: 60%;
+}
+
+.start-journey {
+  text-align: center;
+  margin-top: 5%;
+  font-size: 30px;
+}
+
+.red-portion button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  animation: 3.5s fade-in;
+  transition: 1s;
+}
+
+.red-portion button:hover {
+  box-shadow: 0.5em 0.5em rgb(0, 0, 0, 0.25);
+}
+
